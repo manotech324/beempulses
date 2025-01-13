@@ -12,6 +12,8 @@ use App\Http\Controllers\api\Dashboard\Shop\ShopController;
 use App\Http\Controllers\api\Dashboard\Vehicle\VehicleController;
 use App\Http\Controllers\api\Dashboard\Sku\SkuController;
 use App\Http\Controllers\api\Dashboard\Sku\SkuCategoryController;
+use App\Http\Controllers\api\Dashboard\Sku\PromotionController;
+use App\Models\Sku\Promotion;
 use App\Models\Sku\SkuCategory;
 
 // Route to get the authenticated user
@@ -47,3 +49,4 @@ Route::apiResource('vehicle', VehicleController::class);
 /*--------------Sku-------------------*/
 Route::apiResource('skucategory', SkuCategoryController::class);
 Route::apiResource('sku', SkuController::class);
+Route::apiResource('promotion', PromotionController::class);
